@@ -1,0 +1,77 @@
+body
+{
+	font-family: 'PT Sans', sans-serif;
+	background: #457fca;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h2
+{
+	color:white;
+}
+.Formulario
+{
+	height: 500px;
+}
+form
+{
+	background: #D6CFDA;
+	width: 40%;
+	padding:2%;
+	margin: 2% 0% 0% 30%;
+	-webkit-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+}
+input
+{
+	margin:5% 0% 5%;
+	width: 60%;
+	border-radius: 3%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+}
+a:hover
+{
+	text-decoration: none;
+}
+#enviar
+{
+	background:#9F9CA0;
+	border: none;
+}
+.Pie
+{
+	background: #D0CBCA;
+	float: bottom;
+}
+
+.error{
+	color:red;
+	size: 30px;
+}
+
+.correcto{
+	color:green;
+	size: 30px;
+}
+
+button
+{
+	display: inline-flex;
+	margin-left: 10%;
+	border: none;
+	background-color:black;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	font-family: 'PT Sans', sans-serif;
+	width: 10%;
+	height: 5%;
+}
+button:hover
+{
+	transform: scale(1.1);
+	transition: 1s;
+}

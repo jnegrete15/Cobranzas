@@ -1,0 +1,68 @@
+body
+{
+	font-family: 'PT Sans', sans-serif;
+	background: #457fca;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1
+{
+	color: white;
+	display: inline-flex;
+}
+.Principal
+{
+	margin-bottom: 3.5%;
+}
+.opcion
+{
+	background: #D6CFDA;
+	-webkit-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	margin-bottom: 1%;
+}
+.Pie
+{
+	background: #D0CBCA;
+}
+img
+{
+	width: 10%;
+	height: 10%;
+	margin: 4% 0% 0% 0%;
+}
+img:hover
+{
+	transform: scale(1.1);
+	transition: 1s;
+}
+
+
+.error{
+	color:red;
+	size: 30px;
+}
+
+.correcto{
+	color:green;
+	size: 30px;
+}
+button
+{
+	display: inline-flex;
+	margin-left: 10%;
+	border: none;
+	background-color:black;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	font-family: 'PT Sans', sans-serif;
+	width: 10%;
+	height: 5%;
+}
+button:hover
+{
+	transform: scale(1.1);
+	transition: 1s;
+}

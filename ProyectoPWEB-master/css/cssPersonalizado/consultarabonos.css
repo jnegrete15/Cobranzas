@@ -1,0 +1,67 @@
+body
+{
+	font-family: 'PT Sans', sans-serif;
+	background: #457fca;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h2
+{
+	color: white;
+}
+a
+{
+	color: white;
+	text-decoration: none;
+}
+table
+{
+	width: 100%;
+	font-size: 100%;
+	background-color:transparent;
+}
+td
+{
+	background-color: white;
+	border-bottom:3px solid #457fca;
+	-webkit-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+}
+tr:nth-child(even)
+{
+  background-color: red;
+}
+th
+{
+	color: white;
+}
+
+.error{
+	color:red;
+	size: 30px;
+}
+
+.correcto{
+	color:green;
+	size: 30px;
+}
+
+button
+{
+	display: inline-flex;
+	margin-left: 10%;
+	border: none;
+	background-color:black;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	font-family: 'PT Sans', sans-serif;
+	width: 10%;
+	height: 5%;
+}
+button:hover
+{
+	transform: scale(1.1);
+	transition: 1s;
+}

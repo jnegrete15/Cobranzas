@@ -1,0 +1,36 @@
+body
+{
+	font-family: 'PT Sans', sans-serif;
+	background: #457fca;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+p
+{
+	font-size: 300%;
+}
+.container
+{
+	padding-top: 1%;
+	background: #D6CFDA;
+	-webkit-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 52px -8px rgba(0,0,0,0.75);
+	margin-bottom: 1%;
+	margin-top: 10%;
+}
+button
+{
+	font-size: 150%;
+	width: 30%;
+	height: 5%;
+	margin-top: 5%;
+	margin-bottom:5%;
+	color: ;
+
+}
+
+img{
+	size:10px;
+
+}
