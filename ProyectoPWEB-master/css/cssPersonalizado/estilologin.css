@@ -59,7 +59,7 @@ input
 	size: 30px;
 }
 
-button
+/*button
 {
 	display: inline-flex;
 	margin-left: 10%;
@@ -76,4 +76,4 @@ button:hover
 {
 	transform: scale(1.1);
 	transition: 1s;
-}
+}*/

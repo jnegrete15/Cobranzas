@@ -11,6 +11,15 @@ if(isset($_POST['submit'])){
 	}
 	
 
+	if($idDeudor<=0) {
+		echo "<p class='error'>ID del Deudor no válido<p/>";
+	}
+
+	if($monto<=0) {
+		echo "<p class='error'>El campo monto no puede ser igual o menor a 0<p/>";
+	}
+	
+
 	else{
 		$buscarUsuario="SELECT * FROM deudores WHERE idDeudor='$idDeudor'";
 		$resultado = mysqli_query($conexion, $buscarUsuario);

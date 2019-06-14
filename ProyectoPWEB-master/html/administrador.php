@@ -1,3 +1,10 @@
+<?php
+	    include("../php/conexion.php");
+		session_start();
+		if(!isset($_SESSION["administrador"])){
+			header("Location: invalido.html");
+		}
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +15,13 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-		<?php
-	include("../php/conexion.php");
-		session_start();
-		if(!isset($_SESSION["administrador"])){
-			header("Location: invalido.html");
-		}
-	?>
+		
 	<div class="Principal container-fluid">
 
 		<div class="Opciones container text-center">
 			<h1>Opciones de administrador</h1><br>
 			<h1>Bienvenido</h1> 
-		<button onclick="location.href = '../php/cerrarSesion.php'">Cerrar Sesión</button>
+			<button class="boton" onclick="location.href = '../php/cerrarSesion.php'">Cerrar Sesión</button><br><br>
 			<div class="Seleccion row">
 				<div class="opcion col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<a href="agregarAbono.php"><img src="../img/payment.png" alt="Administrador"></a>

@@ -13,6 +13,10 @@ if(isset($_POST['submit'])){
 		echo "<p class='error'>Debes llenar todos los campos</p>";
 	}
 
+	if(strlen($telefono) != 10){
+		echo "<p class='error'>El telefono debe ser de 10 digitos</p>";		
+	}
+	
 	else{
 		$buscarUsuario="SELECT * FROM deudores WHERE correo='$correo' or telefono='$telefono'";
 		$consulta = $conexion->query($buscarUsuario);

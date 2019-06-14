@@ -1,3 +1,10 @@
+<?php
+	include("../php/conexion.php");
+		session_start();
+		if(!isset($_SESSION["administrador"])){
+			header("Location: invalido.html");
+		}
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +15,6 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<?php
-	include("../php/conexion.php");
-		session_start();
-		if(!isset($_SESSION["administrador"])){
-			header("Location: invalido.html");
-		}
-	?>
 	<div class="principal container-fluid text-center">
 		<h1>Tabla de adeudo por cliente</h1>
 		<button onclick="location.href = '../php/cerrarSesion.php'">Cerrar Sesión</button>

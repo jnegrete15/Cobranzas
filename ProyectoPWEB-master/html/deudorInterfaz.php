@@ -1,3 +1,10 @@
+<?php
+	include("../php/conexion.php");
+		session_start();
+		if(!isset($_SESSION["correo"])){
+			header("Location: invalido.html");
+		}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +15,8 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<?php
-	include("../php/conexion.php");
-		session_start();
-		if(!isset($_SESSION["correo"])){
-			header("Location: invalido.html");
-		}
-	?>
 	<div class="container-fluid text-center">
-		<h1>Bienvenido <?php echo $_SESSION["correo"];?></h1>
+		<h1>Bienvenido <?php echo $_SESSION['nombre'];?></h1>
 		<button onclick="location.href = '../php/cerrarSesion.php'">Cerrar Sesion</button>
 		<div class="container-fluid row">
 			<div class="col-lg-6 text-center">
@@ -44,7 +44,7 @@
 					</table><br><br>
 
 					<table name="deuda">
-				<h1>Deudas</h1>
+				<h1>Deudas asignadas</h1>
 				<?php
 					include("../php/deudorDeudas.php");
 				?>	

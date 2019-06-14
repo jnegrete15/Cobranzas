@@ -2,7 +2,7 @@
     $correo = $_SESSION["correo"];
     $deudaTotal="SELECT * 
     FROM deudores
-    WHERE correo='$correo'"; 
+    WHERE correo='$correo' OR telefono='$correo'"; 
     $consulta = $conexion->query($deudaTotal);
     $row=mysqli_fetch_array($consulta);
     $total = $row['deudaTotal'];

@@ -8,9 +8,9 @@ if(isset($_POST['submit'])){
 	$consulta = $conexion->query($buscarUsuario);
 
 	if(mysqli_num_rows($consulta)>0){
-		session_start();
+	    header("Location:../html/administrador.php");
+	    session_start();
 		$_SESSION['administrador'] = $usuario;
-		header("Location: ../html/administrador.php");
 		mysqli_close($conexion);
 		mysqli_free_result($consulta);
 	}

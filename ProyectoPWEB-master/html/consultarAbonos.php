@@ -1,3 +1,10 @@
+<?php
+	include("../php/conexion.php");
+		session_start();
+		if(!isset($_SESSION["administrador"])){
+			header("Location: invalido.html");
+		}
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +15,6 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<?php
-	include("../php/conexion.php");
-		session_start();
-		if(!isset($_SESSION["administrador"])){
-			header("Location: invalido.html");
-		}
-	?>
 	<div class="principal container-fluid text-center">
 		<h1>Tabla de abonos por cliente</h1>
 		<button onclick="location.href = '../php/cerrarSesion.php'">Cerrar Sesión</button>		
@@ -37,7 +37,7 @@
 				<option value="%2019%">Todos</option>
 				</select><br><br>
 				<h3>Seleciona el ID del deudor</h3>
-				<input type="Number" placeholder="ID Deudor" name="idDeudor">	
+				<input type="Number" placeholder="ID Deudor" name="idDeudor"><br><br>	
 				<input type="submit" name="submit" id="enviar" value="Aplicar"><br>
 				<a href="administrador.php">Regresar</a><br> 
 				<br> 

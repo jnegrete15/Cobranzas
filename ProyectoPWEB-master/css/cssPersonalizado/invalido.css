@@ -19,18 +19,19 @@ p
 	margin-bottom: 1%;
 	margin-top: 10%;
 }
-button
+/*button
 {
 	font-size: 150%;
 	width: 30%;
 	height: 5%;
 	margin-top: 5%;
 	margin-bottom:5%;
-	color: ;
+	color: black;
 
 }
 
-img{
-	size:10px;
+.imgError{
+	width: 20%;
+	height: 20%;
 
-}
+}*/

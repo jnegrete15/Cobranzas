@@ -12,14 +12,14 @@
 	<div class="principal container">
 		<div class="formulario container text-center">
 			<h2>Completa el Formulario</h2>
-			<form action="<?php echo
-			htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
+			<form action="../php/validacionDeudor.php" method="POST">
 				<img src="../img/boy.png" width="105xp" height="105px"><br>
+				<h3>Deudor</h3>
 				<h3>Escribe tus credenciales</h3>
-				<input type="mail" placeholder="Correo" name="correo" required="">
+				<input type="mail" placeholder="Correo o telefono" name="correo" required="">
 				<input type="password" placeholder="Contraseña" name="contraseña" required="">
 				<input type="submit" name="submit" id="enviar"><br>
-				<a href="..index.html">Regresar</a>
+				<a href="../index.html">Regresar</a>
 				<?php
 					include("../php/validacionDeudor.php");
 				?>
